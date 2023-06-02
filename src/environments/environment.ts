@@ -15,7 +15,7 @@ export const environment = {
   }
 };
 
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyAxtI5Vg1L3zxBp0hM_y1vh-yYq6XKuJaQ",
   authDomain: "maskedclothings.firebaseapp.com",
   projectId: "maskedclothings",

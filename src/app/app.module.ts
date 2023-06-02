@@ -15,7 +15,7 @@ import {FormsModule} from "@angular/forms";
 import {MatDialogModule} from "@angular/material/dialog";
 import {AngularFireModule} from "@angular/fire/compat";
 import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
-import {environment} from "../environments/environment";
+import {firebaseConfig} from "../environments/environment";
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import {environment} from "../environments/environment";
     MatInputModule,
     FormsModule,
     MatDialogModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule
   ],
   providers: [],
