@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "maskedclothings": {
+      "hosting": {
+        "masked": [
+          "maskedclothings"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "maskedclothings"
+  }
+}

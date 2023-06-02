@@ -3,6 +3,7 @@ import {Item, TaskDialogResult} from "./item-display/item-display.component";
 import {CdkDragDrop, transferArrayItem} from "@angular/cdk/drag-drop";
 import {MatDialog} from "@angular/material/dialog";
 import {TaskDialogComponentComponent} from "./task-dialog-component/task-dialog-component.component";
+import {AngularFirestore} from "@angular/fire/compat/firestore";
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import {TaskDialogComponentComponent} from "./task-dialog-component/task-dialog-
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private dialog: MatDialog) {}
+  constructor(private dialog: MatDialog, private store: AngularFirestore) {}
   title = 'masked';
 
   todo: Item[] = [

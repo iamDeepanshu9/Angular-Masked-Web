@@ -3,13 +3,22 @@
     {
       "public": "dist/masked",
       "target": "dev",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
       "rewrites": [
         {
           "source": "**",
           "destination": "/index.html"
         }
       ]
+    },
+    {
+      "target": "masked",
+      "source": ".",
+      "frameworksBackend": {}
     }
   ]
 }
